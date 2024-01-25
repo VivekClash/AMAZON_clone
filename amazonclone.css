@@ -99,6 +99,10 @@ nav>p:hover{
     border-color: white;
 }
 
+body{
+    background-color: lightgrey;
+}
+
 .oneProduct{
     border: 1px solid lightgrey;
     width: 250px;
@@ -272,26 +276,46 @@ nav>p:hover{
 .sidebar {
     background-color: white;
     position: fixed;
-    left: 0;
     height: 100vh;
     width: 300px;
     z-index: 5555;
+    /* display: none; */
 
-    padding: 20px;
 }
 
 .sidebar_top{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 10px;
+    font-size: 15px;
 }
 
-.sidebar_top>p{
-    color: red;
+.items{
+    display: flex;
+    flex-direction: column;
+}
+
+.items>h2{
+    padding: 10px;
+}
+
+
+.oneItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.oneItem:hover{
+    background-color: lightgray;
     cursor: pointer;
 }
 
-.sidebar_top>p:hover{
-    text-decoration: underline;
+
+.sidebar_top>i:hover{
+    cursor: pointer;
 }
 

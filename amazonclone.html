@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../AmazonCloneProj/amazonclone.css">
+    <link rel="stylesheet" href="amazonclone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -15,22 +15,34 @@
 
 </head>
 <body> 
-    <script src="./amazonClone.js"></script>
+    <script src="amazonClone.js"></script>
 
     <!-- sidebar -->
-    <div class="sidebar" id="sidebar" style="display: none;">
-        <div class="sidebar_top">
-            <h1>Sidebar</h1>
-            <p onclick="handleCloseSidebar()">Close</p>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar_top" style="background-color: #232f3e; color: white;">
+            <h1>Hello, User</h1>
+            <i onclick="handleCloseSidebar()" class="fa fa-times" aria-hidden="true" style="font-size: 20px;"></i>
         </div>
-     <div>
-        <ul>
-            <li>Home</li>
-            <li>Change Address</li>
-            <li>Change Phone Number</li>
-            <li>Change language</li>
+     <div class="items">
+        <h2>Trending</h2>
+        <div class="oneItem">
+            <p>New Releases</p>
+            <i style="color: gray; font-size: 18px;" class="fa fa-gift" aria-hidden="true"></i>
+        </div>
+        <div class="oneItem">
+            <p>Books</p>
+            <i style="color: gray; font-size: 18px;" class="fa fa-book" aria-hidden="true"></i>
 
-        </ul>
+        </div>
+        <div class="oneItem">
+            <p>Movers & Shakers</p>
+            <i style="color: gray; font-size: 18px;" class="fa fa-truck" aria-hidden="true"></i>
+        </div>
+        <div class="oneItem">
+            <p>Settings</p>
+            <i style="color: gray; font-size: 18px;" class="fa fa-cog" aria-hidden="true"></i>
+        </div>
+        
      </div>
     </div>
 
