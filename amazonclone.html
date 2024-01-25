@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../AmazonCloneProj/amazonclone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+
+    <title>Document</title>
+
+</head>
+<body> 
+    <script src="./amazonClone.js"></script>
+
+    <!-- sidebar -->
+    <div class="sidebar" id="sidebar" style="display: none;">
+        <div class="sidebar_top">
+            <h1>Sidebar</h1>
+            <p onclick="handleCloseSidebar()">Close</p>
+        </div>
+     <div>
+        <ul>
+            <li>Home</li>
+            <li>Change Address</li>
+            <li>Change Phone Number</li>
+            <li>Change language</li>
+
+        </ul>
+     </div>
+    </div>
+
+    <!-- header -->
+    <header>
+    <!-- logo -->
+    
+    <div class="headerData">
+        <img src="../AmazonCloneProj/images/dfrgthyju.png" alt="">
+    </div>
+
+    <!-- location -->
+    <div class="headerData toHide">
+        <i class="fa fa-map-marker"
+        style="color: white;font-size: 30px;"
+        aria-hidden="true"></i>&nbsp;&nbsp;
+        <div class="headerText">
+
+            <p>Deliver to Vivek</p>
+            <h3>Nagpur</h3>
+        </div>
+    </div>
+
+
+    <!-- search bar -->
+    <div class="searchBar">
+        <input type="text" placeholder="Search Amazon.in"/>
+        <i class="fa fa-search" 
+        style="color: black;font-size: 20px;padding: 10px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;
+        background-color: orange;"
+        aria-hidden="true"></i>
+
+    </div>
+
+    <!-- accounts -->
+        <div class="headerData toHide">
+            <div class="headerText">
+    
+                <p>Hello Vivek</p>
+                <h3>Accounts & Lists</h3>
+                
+
+            </div>&nbsp;&nbsp;
+            <i class="fa fa-caret-down" 
+                style="color: white;font-size: 20px;"
+                aria-hidden="true"></i>
+        </div>
+    <!-- returns & orders -->
+    <a href="./signin.html">
+        <div class="headerData toHide">
+            <div class="headerText">
+       
+           <!-- <p> Return</p> -->
+          
+           <h3>Logout</h3>
+            </div>
+        </div>
+    </a>
+   
+    
+
+    <!-- cart -->
+    <div class="headerData">
+    <i class="fa fa-shopping-cart" 
+    style="color: white;font-size: 40px;"
+    aria-hidden="true"></i>
+    </div>
+
+    </header>
+    <!-- navbar -->
+    <nav>
+        <p onclick="handleOpenSidebar()">
+        <i class="fa fa-bars" aria-hidden="true" style="color: white";>&nbsp;&nbsp;  All</i>
+        </p>
+        <p>Mobiles</p>
+        <p>AmazonPay</p>
+        <p>Beauty & Personal Care</p>
+        <p>Amazon MiniTV</p>
+        <p>Sell</p>
+
+    </nav>
+
+    <!-- image -->
+    <div class="AmazImage">
+    <img src="../AmazonCloneProj/images/amazonbigimg.jpg" alt="">
+    </div>
+
+    <!-- products -->
+    <div class="products" id="products">
+        <!-- <div class="oneProduct">
+
+
+
+            
+            <p>Smartphones</p>
+        
+        
+        
+         
+            <img src="../AmazonCloneProj/images/smartphone.png" alt="">
+        
+        
+        
+        
+                <div class="ratingAndprice">
+            
+            <h1>&#x20B9; 27,000</h1>
+        
+         
+            <h3>Rating:5</h3>
+            </div>
+        
+            
+            <h2>Samsung Galaxy S21</h2>
+        
+            
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam atque ab praesentium nobis eligendi at, iste molestiae deleniti reiciendis beatae quos mollitia facere, autem, repellendus nihil error voluptatum ad ducimus!</h4>
+        
+            
+            <button>Add to Cart</button>
+
+        </div> -->
+      
+
+    </div>
+   
+</body>
+</html>
